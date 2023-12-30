@@ -1,5 +1,4 @@
 namespace taskList.Models;
-
 public class MyTask
 {
     public int Id { get; set; }

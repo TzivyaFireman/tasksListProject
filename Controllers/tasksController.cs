@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using taskList.Models;
 using taskList.Services;
+using taskList.Models;
+using taskList.Interfaces;
+
 
 namespace taskList.Controllers;
 
@@ -8,34 +10,42 @@ namespace taskList.Controllers;
 [Route("[controller]")]
 public class TaskController : ControllerBase
 {
+
+    IMyTaskService MyTaskService;
+
+    public TaskController(IMyTaskService MyTaskService)
+        {
+            this.MyTaskService = MyTaskService;
+        }
+
     [HttpGet]
     public ActionResult<List<MyTask>> Get()
     {
-        return TaskService.GetAll();
+        return MyTaskService.GetAll();
     }
 
     [HttpGet("{id}")]
     public ActionResult<MyTask> Get(int id)
     {
-        var task = TaskService.GetById(id);
+        var task = MyTaskService.GetById(id);
         if (task == null)
             return NotFound();
         return task;
     }
 
-    [HttpPost]
-    public ActionResult Post(MyTask newTask)
-    {
-        var newId = TaskService.Add(newTask);
+            [HttpPost] 
+        public IActionResult Create(MyTask myTask)
+        {
+            MyTaskService.Add(myTask);
+            return CreatedAtAction(nameof(Create), new {id=myTask.Id}, myTask);
 
-        return CreatedAtAction("Post",
-            new { id = newId }, TaskService.GetById(newId));
-    }
+        }
+
 
     [HttpPut("{id}")]
     public ActionResult Put(int id, MyTask newTask)
     {
-        var result = TaskService.Update(id, newTask);
+        var result = MyTaskService.Update(id, newTask);
         if (!result)
         {
             return BadRequest();
@@ -46,11 +56,11 @@ public class TaskController : ControllerBase
     [HttpDelete("{id}")]
     public ActionResult Delete(int id)
     {
-        var task = TaskService.GetById(id);
+        var task = MyTaskService.GetById(id);
         if (task==null)
             return NotFound();
 
-        TaskService.Delete(id);
+        MyTaskService.Delete(id);
 
         return NoContent();
 

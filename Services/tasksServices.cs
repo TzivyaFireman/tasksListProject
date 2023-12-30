@@ -1,42 +1,44 @@
+using System.Text.Json;
+using taskList.Interfaces;
 using taskList.Models;
+
 namespace taskList.Services;
 
-public static class TaskService
+public class TaskService : IMyTaskService
 {
-    private static List<MyTask> tasks;
-
-    static TaskService()
+    List<MyTask> tasks { get; }
+    private string FileName = "tasks.json";
+    public TaskService()
     {
-        tasks = new List<MyTask>
+        this.FileName = Path.Combine( "tasks.json");
+        using (var jsonFile = File.OpenText(FileName))
         {
-            new MyTask (1, "make H.W",false),
-            new MyTask (2,  "go to shopping", false),
-            new MyTask (3, "sleeeeeeeep",  false)
-        };
+            tasks = JsonSerializer.Deserialize<List<MyTask>>(jsonFile.ReadToEnd(),
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+        }
     }
+    private void saveToFile()
+    {
+        File.WriteAllText(FileName, JsonSerializer.Serialize(tasks));
+    }
+    public List<MyTask> GetAll() => tasks;
 
-    public static List<MyTask> GetAll() => tasks;
-
-    public static MyTask GetById(int id)
+    public MyTask GetById(int id)
     {
         return tasks.FirstOrDefault(t => t.Id == id);
     }
 
-    public static int Add(MyTask newTask)
-    {
-        if (tasks.Count == 0)
+     public void Add(MyTask newTask)
         {
-            newTask.Id = 1;
+            newTask.Id = tasks.Count()+1;
+            tasks.Add(newTask);
+            saveToFile();
         }
-        else
-        {
-            newTask.Id = tasks.Max(t => t.Id) + 1;
-        }
-        tasks.Add(newTask);
-        return newTask.Id;
-    }
 
-    public static bool Update(int id, MyTask newTask)
+    public bool Update(int id, MyTask newTask)
     {
         if (id != newTask.Id)
             return false;
@@ -51,7 +53,7 @@ public static class TaskService
     }
 
 
-    public static bool Delete(int id)
+    public bool Delete(int id)
     {
         var existingTask = GetById(id);
         if (existingTask == null)
@@ -64,7 +66,17 @@ public static class TaskService
         tasks.RemoveAt(index);
         return true;
     }
+        public int Count => tasks.Count();
 
 
 
+}
+
+
+public static class MyTaskUtils
+{
+    public static void AddMyTask(this IServiceCollection services)
+    {
+        services.AddScoped<IMyTaskService, TaskService>();
+    }
 }
