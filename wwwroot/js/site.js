@@ -1,4 +1,4 @@
-const uri = '/myTask';
+const uri = '/task';
 let tasks = [];
 
 function getItems() {
@@ -7,7 +7,6 @@ function getItems() {
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
 }
-
 function addItem() {
     const addNameTextbox = document.getElementById('add-name');
 
@@ -17,13 +16,13 @@ function addItem() {
     };
 
     fetch(uri, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(item)
-        })
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(item)
+    })
         .then(response => response.json())
         .then(() => {
             getItems();
@@ -34,18 +33,18 @@ function addItem() {
 
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
-            method: 'DELETE'
-        })
+        method: 'DELETE'
+    })
         .then(() => getItems())
         .catch(error => console.error('Unable to delete item.', error));
 }
 
 function displayEditForm(id) {
-    const item = pizzas.find(item => item.id === id);
+    const item = tasks.find(item => item.id === id);
 
     document.getElementById('edit-name').value = item.name;
     document.getElementById('edit-id').value = item.id;
-    document.getElementById('edit-isGlutenFree').checked = item.isGlutenFree;
+    document.getElementById('edit-isDone').checked = item.isDone;
     document.getElementById('editForm').style.display = 'block';
 }
 
@@ -53,18 +52,18 @@ function updateItem() {
     const itemId = document.getElementById('edit-id').value;
     const item = {
         id: parseInt(itemId, 10),
-        isGlutenFree: document.getElementById('edit-isGlutenFree').checked,
+        isDone: document.getElementById('edit-isDone').checked,
         name: document.getElementById('edit-name').value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
-            method: 'PUT',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(item)
-        })
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(item)
+    })
         .then(() => getItems())
         .catch(error => console.error('Unable to update item.', error));
 
@@ -78,13 +77,13 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'pizza' : 'pizza kinds';
+    const name = (itemCount === 1) ? 'task' : 'task options';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
 
 function _displayItems(data) {
-    const tBody = document.getElementById('pizzas');
+    const tBody = document.getElementById('tasks');
     tBody.innerHTML = '';
 
     _displayCount(data.length);
@@ -92,10 +91,10 @@ function _displayItems(data) {
     const button = document.createElement('button');
 
     data.forEach(item => {
-        let isGlutenFreeCheckbox = document.createElement('input');
-        isGlutenFreeCheckbox.type = 'checkbox';
-        isGlutenFreeCheckbox.disabled = true;
-        isGlutenFreeCheckbox.checked = item.isGlutenFree;
+        let isDoneCheckbox = document.createElement('input');
+        isDoneCheckbox.type = 'checkbox';
+        isDoneCheckbox.disabled = true;
+        isDoneCheckbox.checked = item.isDone;
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
@@ -108,7 +107,7 @@ function _displayItems(data) {
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0);
-        td1.appendChild(isGlutenFreeCheckbox);
+        td1.appendChild(isDoneCheckbox);
 
         let td2 = tr.insertCell(1);
         let textNode = document.createTextNode(item.name);
@@ -121,5 +120,5 @@ function _displayItems(data) {
         td4.appendChild(deleteButton);
     });
 
-    pizzas = data;
+    tasks = data;
 }

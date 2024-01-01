@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <h1>Pizza CRUD</h1>
+    <h1>Task CRUD</h1>
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New pizza">
+        <input type="text" id="add-name" placeholder="New task">
         <input type="submit" value="Add">
     </form>
 
@@ -19,7 +19,7 @@
         <h3>Edit</h3>
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
-            <input type="checkbox" id="edit-isGlutenFree">
+            <input type="checkbox" id="edit-isDone">
             <input type="text" id="edit-name">
             <input type="submit" value="Save">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
@@ -35,7 +35,7 @@
             <th></th>
             <th></th>
         </tr>
-        <tbody id="pizzas"></tbody>
+        <tbody id="tasks"></tbody>
     </table>
 
     <script src="js/site.js" asp-append-version="true"></script>

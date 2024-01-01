@@ -10,7 +10,7 @@ public class TaskService : IMyTaskService
     private string FileName = "tasks.json";
     public TaskService()
     {
-        this.FileName = Path.Combine( "tasks.json");
+        this.FileName = Path.Combine("tasks.json");
         using (var jsonFile = File.OpenText(FileName))
         {
             tasks = JsonSerializer.Deserialize<List<MyTask>>(jsonFile.ReadToEnd(),
@@ -31,12 +31,12 @@ public class TaskService : IMyTaskService
         return tasks.FirstOrDefault(t => t.Id == id);
     }
 
-     public void Add(MyTask newTask)
-        {
-            newTask.Id = tasks.Count()+1;
-            tasks.Add(newTask);
-            saveToFile();
-        }
+    public void Add(MyTask newTask)
+    {
+        newTask.Id = tasks.Count() + 1;
+        tasks.Add(newTask);
+        saveToFile();
+    }
 
     public bool Update(int id, MyTask newTask)
     {
@@ -49,6 +49,8 @@ public class TaskService : IMyTaskService
         if (index == -1)
             return false;
         tasks[index] = newTask;
+        saveToFile();
+
         return true;
     }
 
@@ -64,9 +66,11 @@ public class TaskService : IMyTaskService
             return false;
 
         tasks.RemoveAt(index);
+        saveToFile();
+
         return true;
     }
-        public int Count => tasks.Count();
+    public int Count => tasks.Count();
 
 
 
