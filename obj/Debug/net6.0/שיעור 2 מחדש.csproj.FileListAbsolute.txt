@@ -56,3 +56,32 @@ C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w 3\tas
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w 3\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w 3\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w 3\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\appsettings.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\tasks.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.staticwebassets.runtime.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.exe
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.deps.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.runtimeconfig.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.pdb
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfo.cs
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\scopedcss\bundle\שיעור 2 מחדש.styles.css
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CopyComplete
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\refint\שיעור 2 מחדש.dll
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
+C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll

@@ -1,4 +1,5 @@
 using taskList.Services;
+using tasks.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,19 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+app.Map("/favicon.ico", (a) =>
+    a.Run(async c => await Task.CompletedTask));
+
+app.UseLogMiddleware("file.log");
+
+app.Use(async (context, next) => 
+{   
+    await next.Invoke();
+});
+
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

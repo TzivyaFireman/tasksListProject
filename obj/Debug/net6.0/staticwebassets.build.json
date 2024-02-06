@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WXWi0vLaLtCX1ti6w6wqooaxB7q3kiyjk+i7ITnY6VQ=",
+  "Hash": "5V1mtlFpae+jaVmZgxaYDWd6mB8969IKSu8nV6aP42c=",
   "Source": "שיעור 2 מחדש",
   "BasePath": "_content/שיעור 2 מחדש",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "שיעור 2 מחדש\\wwwroot",
       "Source": "שיעור 2 מחדש",
-      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\css\\site.css",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\index.html",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\js\\site.js",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

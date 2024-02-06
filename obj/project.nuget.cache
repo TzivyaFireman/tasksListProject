@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KzKLFYsJia4I/y799Rz34L2iJzCZEQyX3BMkyca/rLnqPWD7IEytRM9FsF7ZrdHqeYrILfv/T3Vb5XLT/XpTnQ==",
+  "dgSpecHash": "hgbNWaWy5f6KmI8HLfsXFIvopwBYwFKSkc7pggDilj2Zs4CDc5iod63gAJcai7KQZ99Mg2VWH+2oOpYY4q2E1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w 3\\tasksListProject\\שיעור 2 מחדש.csproj",
+  "projectFilePath": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\שיעור 2 מחדש.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\1\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
