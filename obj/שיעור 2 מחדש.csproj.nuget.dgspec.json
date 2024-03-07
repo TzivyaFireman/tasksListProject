@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\שיעור 2 מחדש.csproj": {}
+    "F:\\tasksListProject\\שיעור 2 מחדש.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\שיעור 2 מחדש.csproj": {
+    "F:\\tasksListProject\\שיעור 2 מחדש.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\שיעור 2 מחדש.csproj",
+        "projectUniqueName": "F:\\tasksListProject\\שיעור 2 מחדש.csproj",
         "projectName": "שיעור 2 מחדש",
-        "projectPath": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\שיעור 2 מחדש.csproj",
+        "projectPath": "F:\\tasksListProject\\שיעור 2 מחדש.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\Desktop\\יד\\core\\שיעורי בית מוכנים\\taskList\\h.w.4\\tasksListProject\\obj\\",
+        "outputPath": "F:\\tasksListProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

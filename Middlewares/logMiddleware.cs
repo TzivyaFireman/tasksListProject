@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace tasks.Middlewares;
+namespace taskList.Middlewares;
 
 public class LogMiddleware
 {

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\שיעור 2 מחדש.props" />
+</Project>

@@ -77,10 +77,10 @@ public class TaskService : IMyTaskService
 }
 
 
-public static class MyTaskUtils
-{
-    public static void AddMyTask(this IServiceCollection services)
-    {
-        services.AddScoped<IMyTaskService, TaskService>();
-    }
-}
+// public static class MyTaskUtils
+// {
+//     public static void AddMyTask(this IServiceCollection services)
+//     {
+//         services.AddScoped<IMyTaskService, TaskService>();
+//     }
+// }

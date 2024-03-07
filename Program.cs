@@ -1,12 +1,13 @@
 using taskList.Services;
-using tasks.Middlewares;
-
+using taskList.Middlewares;
+using taskList.Utilities;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddMyTask();
+builder.Services.AddUser();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.שיעור 2 מחדש.props",
+      "PackagePath": "build\\שיעור 2 מחדש.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.שיעור 2 מחדש.props",
+      "PackagePath": "buildMultiTargeting\\שיעור 2 מחדש.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.שיעור 2 מחדש.props",
+      "PackagePath": "buildTransitive\\שיעור 2 מחדש.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.שיעור 2 מחדש.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "Id": 1,
+        "Name": "shimmon",
+        "Password": "shim123",
+        "UserType": 0
+    },
+    {
+        "Id": 2,
+        "Name": "shimmon",
+        "Password": "shim123",
+        "UserType": 1
+    },
+    {
+        "Id": 3,
+        "Name": "rut",
+        "Password": "cvb65",
+        "UserType": 1
+    },
+    {
+        "Id": 4,
+        "Name": "yael",
+        "Password": "yael3",
+        "UserType": 1
+    },
+    {
+        "Id": 5,
+        "Name": "Moshe Gilad",
+        "Password": "mmmggg",
+        "UserType": 1
+    }
+]

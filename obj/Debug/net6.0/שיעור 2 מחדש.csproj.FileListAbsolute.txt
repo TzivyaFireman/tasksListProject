@@ -85,3 +85,83 @@ C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tas
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
 C:\Users\1\Desktop\יד\core\שיעורי בית מוכנים\taskList\h.w.4\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\appsettings.Development.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\appsettings.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.staticwebassets.runtime.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.exe
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.deps.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.runtimeconfig.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.pdb
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.AssemblyReference.cache
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.GeneratedMSBuildEditorConfig.editorconfig
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfoInputs.cache
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfo.cs
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CoreCompileInputs.cache
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cs
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cache
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets.build.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets.development.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\scopedcss\bundle\שיעור 2 מחדש.styles.css
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CopyComplete
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\refint\שיעור 2 מחדש.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\tasks.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\data\users.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.sourcelink.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.שיעור 2 מחדש.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.build.שיעור 2 מחדש.props
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.שיעור 2 מחדש.props
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.שיעור 2 מחדש.props
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\obj\Debug\net6.0\staticwebassets.pack.json
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+Z:\B\פיירמן צביה\core הפרויקט\tasksListProject\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\tasksListProject\bin\Debug\net6.0\appsettings.Development.json
+F:\tasksListProject\bin\Debug\net6.0\appsettings.json
+F:\tasksListProject\bin\Debug\net6.0\data\users.json
+F:\tasksListProject\bin\Debug\net6.0\tasks.json
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.staticwebassets.runtime.json
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.exe
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.deps.json
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.runtimeconfig.json
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.dll
+F:\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.pdb
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\tasksListProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\tasksListProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\tasksListProject\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.AssemblyReference.cache
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.GeneratedMSBuildEditorConfig.editorconfig
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfoInputs.cache
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.AssemblyInfo.cs
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CoreCompileInputs.cache
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cs
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.MvcApplicationPartsAssemblyInfo.cache
+F:\tasksListProject\obj\Debug\net6.0\staticwebassets.build.json
+F:\tasksListProject\obj\Debug\net6.0\staticwebassets.development.json
+F:\tasksListProject\obj\Debug\net6.0\scopedcss\bundle\שיעור 2 מחדש.styles.css
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CopyComplete
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.dll
+F:\tasksListProject\obj\Debug\net6.0\refint\שיעור 2 מחדש.dll
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
+F:\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
+F:\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
