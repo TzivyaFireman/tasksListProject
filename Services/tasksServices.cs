@@ -1,12 +1,13 @@
 using System.Text.Json;
 using taskList.Interfaces;
 using taskList.Models;
+using System;
 
 namespace taskList.Services;
 
 public class TaskService : IMyTaskService
 {
-    List<MyTask> tasks { get; }
+    List<MyTask> tasks { get; set; }
     private string FileName = "tasks.json";
     public TaskService()
     {
@@ -24,7 +25,10 @@ public class TaskService : IMyTaskService
     {
         File.WriteAllText(FileName, JsonSerializer.Serialize(tasks));
     }
-    public List<MyTask> GetAll() => tasks;
+
+    public List<MyTask> GetAll(int userId){
+        return new List<MyTask>(tasks.Where(t=>t.Owner==userId));
+    }
 
     public MyTask GetById(int id)
     {
@@ -70,8 +74,18 @@ public class TaskService : IMyTaskService
 
         return true;
     }
-    public int Count => tasks.Count();
 
+    public void DeleteByUserID(int id)
+    {
+        // foreach (var task in tasks)
+        // {
+        //     if(task.Owner==id)
+        //         tasks.RemoveAt(tasks.IndexOf(task));
+        // }
+        tasks = new List<MyTask>(tasks.Where(t=>t.Owner!=id));
+        saveToFile();
+    }
+    public int Count => tasks.Count();
 
 
 }

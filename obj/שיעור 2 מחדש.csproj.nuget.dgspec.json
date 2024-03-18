@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\tasksListProject\\שיעור 2 מחדש.csproj": {}
+    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj": {}
   },
   "projects": {
-    "F:\\tasksListProject\\שיעור 2 מחדש.csproj": {
+    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\tasksListProject\\שיעור 2 מחדש.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj",
         "projectName": "שיעור 2 מחדש",
-        "projectPath": "F:\\tasksListProject\\שיעור 2 מחדש.csproj",
+        "projectPath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "F:\\tasksListProject\\obj\\",
+        "outputPath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

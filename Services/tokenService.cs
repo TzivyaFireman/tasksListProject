@@ -6,24 +6,25 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using taskList.Interfaces;
 
 
 namespace taskList.Services
 {
-    public static class TokenService
+    public class TokenService : ITokenService
     {
-        private static SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SXkSqsKyNUyvGbnHs7ke2NCq8zQzNLW7mPmHbnZZ"));
-        private static string issuer = "https://localhost:7218/";
-        public static SecurityToken GetToken(List<Claim> claims) =>
+        private SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SXkSqsKyNUyvGbnHs7ke2NCq8zQzNLW7mPmHbnZZ"));
+        private string issuer = "https://localhost:7218/";
+        public SecurityToken GetToken(List<Claim> claims) =>
             new JwtSecurityToken(
                 issuer,
                 issuer,
                 claims,
              expires: DateTime.Now.AddDays(30.0),
-                signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
+            signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
             );
 
-        public static TokenValidationParameters GetTokenValidationParameters() =>
+        public TokenValidationParameters GetTokenValidationParameters() =>
             new TokenValidationParameters
             {
                 ValidIssuer = issuer,
@@ -32,7 +33,7 @@ namespace taskList.Services
                 ClockSkew = TimeSpan.Zero // remove delay of token when expire
             };
 
-        public static string WriteToken(SecurityToken token) =>
+        public string WriteToken(SecurityToken token) =>
                new JwtSecurityTokenHandler().WriteToken(token);
     }
 }

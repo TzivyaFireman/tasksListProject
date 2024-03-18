@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S+tGKKLoISAdbbjw5Cyu3lmA73Id3JOOkdzVMUExfDM=",
+  "Hash": "ER1KencqGVT9nTobxasccuVVDq34FhhFi6JAE6Cb77M=",
   "Source": "שיעור 2 מחדש",
   "BasePath": "_content/שיעור 2 מחדש",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "שיעור 2 מחדש\\wwwroot",
       "Source": "שיעור 2 מחדש",
-      "ContentRoot": "F:\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\tasksListProject\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\css\\site.css",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\tasksListProject\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\index.html",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "F:\\tasksListProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\js\\site.js",
       "SourceId": "שיעור 2 מחדש",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\tasksListProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\",
       "BasePath": "_content/שיעור 2 מחדש",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

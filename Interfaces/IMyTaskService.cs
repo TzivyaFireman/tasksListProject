@@ -6,11 +6,12 @@ namespace taskList.Interfaces;
 
 public interface IMyTaskService
 {
-    List<MyTask> GetAll();
+    public List<MyTask> GetAll(int userId);
     MyTask GetById(int id);
     void Add(MyTask newTask);
     bool Update(int id, MyTask newTask);
 
     bool Delete(int id);
-
+    void DeleteByUserID(int id);
+    //public bool chekAuthorization(int taskId);
 }

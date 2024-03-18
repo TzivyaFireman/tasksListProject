@@ -7,11 +7,15 @@ public static class Utilities
 {
     public static void AddMyTask(this IServiceCollection services)
     {
-        services.AddScoped<IMyTaskService, TaskService>();
+        services.AddSingleton<IMyTaskService, TaskService>();
     }
 
     public static void AddUser(this IServiceCollection services)
     {
-        services.AddScoped<ILoginService, LoginService>();
+        services.AddSingleton<IUserService, UserService>();
+    }
+    public static void AddToken(this IServiceCollection services)
+    {
+        services.AddSingleton<ITokenService, TokenService>();
     }
 }
