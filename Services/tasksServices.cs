@@ -8,10 +8,10 @@ namespace taskList.Services;
 public class TaskService : IMyTaskService
 {
     List<MyTask> tasks { get; set; }
-    private string FileName = "tasks.json";
+    private string FileName = "data/tasks.json";
     public TaskService()
     {
-        this.FileName = Path.Combine("tasks.json");
+        this.FileName = Path.Combine("data/tasks.json");
         using (var jsonFile = File.OpenText(FileName))
         {
             tasks = JsonSerializer.Deserialize<List<MyTask>>(jsonFile.ReadToEnd(),
@@ -26,8 +26,9 @@ public class TaskService : IMyTaskService
         File.WriteAllText(FileName, JsonSerializer.Serialize(tasks));
     }
 
-    public List<MyTask> GetAll(int userId){
-        return new List<MyTask>(tasks.Where(t=>t.Owner==userId));
+    public List<MyTask> GetAll(int userId)
+    {
+        return new List<MyTask>(tasks.Where(t => t.Owner == userId));
     }
 
     public MyTask GetById(int id)
@@ -37,7 +38,7 @@ public class TaskService : IMyTaskService
 
     public void Add(MyTask newTask)
     {
-        newTask.Id = tasks.Count() + 1;
+        newTask.Id = tasks.Max(t=> t.Id) + 1;
         tasks.Add(newTask);
         saveToFile();
     }
@@ -82,11 +83,10 @@ public class TaskService : IMyTaskService
         //     if(task.Owner==id)
         //         tasks.RemoveAt(tasks.IndexOf(task));
         // }
-        tasks = new List<MyTask>(tasks.Where(t=>t.Owner!=id));
+        tasks = new List<MyTask>(tasks.Where(t => t.Owner != id));
         saveToFile();
     }
     public int Count => tasks.Count();
-
 
 }
 

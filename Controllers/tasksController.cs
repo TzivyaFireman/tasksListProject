@@ -48,7 +48,6 @@ public class TaskController : ControllerBase
         myTask.Owner = int.Parse(User.FindFirst("Id").Value);
         MyTaskService.Add(myTask);
         return CreatedAtAction(nameof(Create), new { id = myTask.Id }, myTask);
-
     }
 
 
@@ -85,6 +84,5 @@ public class TaskController : ControllerBase
     private bool chekAuthorization(int taskId)
     {
         return MyTaskService.GetById(taskId).Owner == int.Parse(User.FindFirst("id").Value);
-
     }
 }

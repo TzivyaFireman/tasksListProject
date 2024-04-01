@@ -1,12 +1,30 @@
 const uri = '/task';
 let tasks = [];
+let token = localStorage.getItem("token");
 
-function getItems() {
-    fetch(uri)
+alert(token);
+
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer " + JSON.parse(token));
+myHeaders.append("Content-Type", "application/json");
+
+
+const getItems = (token) => {
+
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+
+    fetch(uri, requestOptions)
         .then(response => response.json())
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
 }
+
+getItems(token);
+
 function addItem() {
     const addNameTextbox = document.getElementById('add-name');
 
@@ -17,15 +35,12 @@ function addItem() {
 
     fetch(uri, {
         method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
+        headers: myHeaders,
         body: JSON.stringify(item)
     })
         .then(response => response.json())
         .then(() => {
-            getItems();
+            getItems(token);
             addNameTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
@@ -33,9 +48,10 @@ function addItem() {
 
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: myHeaders,
     })
-        .then(() => getItems())
+        .then(() => getItems(token))
         .catch(error => console.error('Unable to delete item.', error));
 }
 
@@ -58,13 +74,10 @@ function updateItem() {
 
     fetch(`${uri}/${itemId}`, {
         method: 'PUT',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
+        headers: myHeaders,
         body: JSON.stringify(item)
     })
-        .then(() => getItems())
+        .then(() => getItems(token))
         .catch(error => console.error('Unable to update item.', error));
 
     closeInput();
@@ -122,3 +135,6 @@ function _displayItems(data) {
 
     tasks = data;
 }
+
+
+

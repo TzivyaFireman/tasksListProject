@@ -171,7 +171,6 @@ C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\refint\שיעור
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.pdb
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\appsettings.json
-C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\tasks.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\data\users.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.staticwebassets.runtime.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\שיעור 2 מחדש.exe
@@ -196,3 +195,4 @@ C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\scopedcss\bundle\
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CopyComplete
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
+C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\data\tasks.json

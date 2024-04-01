@@ -33,7 +33,7 @@ public class UserService : IUserService
 
     public void Add(User newUser)
     {
-        newUser.Id = Users.Count() + 1;
+        newUser.Id = Users.Max(u=>u.Id) + 1;
         Users.Add(newUser);
         saveToFile();
     }
@@ -53,7 +53,6 @@ public class UserService : IUserService
 
         return true;
     }
-
 
     public bool Delete(int id)
     {

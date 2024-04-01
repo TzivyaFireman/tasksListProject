@@ -30,7 +30,7 @@ public class UserController : ControllerBase
     public ActionResult<string> login([FromBody] User user)
     {
         var dt = DateTime.Now;
-        User currentUser = this.UserService.GetAll().FirstOrDefault(u => u.Name == user.Name && u.Password == u.Password);
+        User currentUser = this.UserService.GetAll().FirstOrDefault(u => u.Name == user.Name && u.Password == user.Password);
 
         if (currentUser == null)
             return Unauthorized();
@@ -40,7 +40,7 @@ public class UserController : ControllerBase
             new Claim("type", "user"),
             new Claim("id",(currentUser.Id).ToString()),
         };
-        if (user.UserType == 0)
+        if (currentUser.UserType == UserType.ADMIN)
             claims.Add(new Claim("type", "admin"));
 
         var token = TokenService.GetToken(claims);
@@ -67,7 +67,7 @@ public class UserController : ControllerBase
     [Authorize(Policy = "user")]
     public ActionResult<User> GetCurrent()
     {
-        this.userId=int.Parse(User.FindFirst("id")?.Value);
+        this.userId = int.Parse(User.FindFirst("id")?.Value);
         var user = UserService.GetById(userId);
         if (user == null)
             return NotFound();
