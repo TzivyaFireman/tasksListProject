@@ -30,7 +30,9 @@ const GetUser = (req, res) => {
             }
             else {
                 localStorage.setItem("token", JSON.stringify(token));
-                window.location.href = "../users.html";
+                userName.value = ''; // Clear username field manually
+                userPassword.value = ''; // Clear password field manually          
+                window.location.href = "../tasks.html";
             }
         })
         .catch(() => alert("not found!!🙄"))

@@ -196,3 +196,5 @@ C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מח
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\data\tasks.json
+C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\package-lock.json
+C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\package.json

@@ -2,14 +2,23 @@ const uri = '/user';
 let users = [];
 let token = localStorage.getItem("token");
 
-alert("hi manager");
 
+const tokenExpired = () => {
+    // if (jwtDecode(token).exp < Date.now() / 1000) {
+        // if (token) {
+        //     const tokenData = jwt_decode(token);
+        //     const expirationTime = tokenData.exp * 1000
+        alert("פג הסשן של המשתמש");
+        window.location.href = '/index.html';
+    // }
+}
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + JSON.parse(token));
 myHeaders.append("Content-Type", "application/json");
 
 
 const getItems = (token) => {
+    tokenExpired();
     var requestOptions = {
         method: 'GET',
         headers: myHeaders,
@@ -18,7 +27,10 @@ const getItems = (token) => {
     fetch(uri, requestOptions)
         .then(response => response.json())
         .then(data => _displayItems(data))
-        .catch(error => console.error('Unable to get items.', error));
+        .catch(error => {
+            console.error('Unable to get items.', error);
+            tokenExpired();
+        });
 }
 
 getItems(token);
@@ -43,7 +55,10 @@ function addItem() {
             addNameTextbox.value = '';
             addPasswordTextbox.value = '';
         })
-        .catch(error => console.error('Unable to add item.', error));
+        .catch(error => {
+            console.error('Unable to add item.', error);
+            tokenExpired();
+        });
 }
 
 function deleteItem(id) {
@@ -52,7 +67,10 @@ function deleteItem(id) {
         headers: myHeaders,
     })
         .then(() => getItems(token))
-        .catch(error => console.error('Unable to delete item.', error));
+        .catch(error => {
+            console.error('Unable to delete item.', error);
+            tokenExpired();
+        });
 }
 
 function displayEditForm(id) {
@@ -79,7 +97,9 @@ function displayEditForm(id) {
 //         body: JSON.stringify(item)
 //     })
 //         .then(() => getItems(token))
-//         .catch(error => console.error('Unable to update item.', error));
+//         .catch(error => {console.error('Unable to update item.', error);
+//          tokenExpired();
+//      });
 
 //     closeInput();
 
@@ -108,7 +128,7 @@ function _displayItems(data) {
         let isManagerCheckbox = document.createElement('input');
         isManagerCheckbox.type = 'checkbox';
         isManagerCheckbox.disabled = true;
-        isManagerCheckbox.checked = item.isManager;
+        isManagerCheckbox.checked = item.userType == 0;
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';

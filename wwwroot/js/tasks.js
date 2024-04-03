@@ -2,7 +2,27 @@ const uri = '/task';
 let tasks = [];
 let token = localStorage.getItem("token");
 
-alert(token);
+
+const moveToUsersDetails = async () => {
+
+    const tokenParts = token.split('.');
+    const payload = JSON.parse(atob(tokenParts[1]));
+    const userType = payload.type;
+    let linkButtonToUsers = document.getElementById('linkButtonToUsers');
+    if (userType[1] === "admin") {
+        linkButtonToUsers.style.display = 'block';
+    }
+}
+moveToUsersDetails()
+
+const tokenExpired = () => {
+    // if (token) {
+    // const tokenData = jwt_decode(token);
+    // const expirationTime = tokenData.exp * 1000
+    alert("פג הסשן של המשתמש");
+    window.location.href = '/index.html';
+}
+
 
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + JSON.parse(token));
@@ -20,7 +40,10 @@ const getItems = (token) => {
     fetch(uri, requestOptions)
         .then(response => response.json())
         .then(data => _displayItems(data))
-        .catch(error => console.error('Unable to get items.', error));
+        .catch(error => {
+            console.error('Unable to get items.', error);
+            tokenExpired();
+        });
 }
 
 getItems(token);
@@ -43,7 +66,11 @@ function addItem() {
             getItems(token);
             addNameTextbox.value = '';
         })
-        .catch(error => console.error('Unable to add item.', error));
+        .catch(
+            error => {
+                console.error('Unable to add item.', error);
+                tokenExpired();
+            });
 }
 
 function deleteItem(id) {
@@ -52,7 +79,10 @@ function deleteItem(id) {
         headers: myHeaders,
     })
         .then(() => getItems(token))
-        .catch(error => console.error('Unable to delete item.', error));
+        .catch(error => {
+            console.error('Unable to delete item.', error);
+            tokenExpired();
+        });
 }
 
 function displayEditForm(id) {
@@ -78,7 +108,10 @@ function updateItem() {
         body: JSON.stringify(item)
     })
         .then(() => getItems(token))
-        .catch(error => console.error('Unable to update item.', error));
+        .catch(error => {
+            console.error('Unable to update item.', error);
+            tokenExpired();
+        });
 
     closeInput();
 
@@ -135,6 +168,7 @@ function _displayItems(data) {
 
     tasks = data;
 }
+
 
 
 

@@ -12,7 +12,6 @@ namespace taskList.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-
     IUserService UserService;
     ITokenService TokenService;
     IMyTaskService MyTaskService;
