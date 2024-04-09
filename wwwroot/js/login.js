@@ -3,7 +3,7 @@ const form = document.getElementById('formUser')
 const userName = document.getElementById('userName')
 const userPassword = document.getElementById('userPassword')
 const submitButton = document.getElementById('submitButton');
-const GetUser = (req, res) => {
+const login = (req, res) => {
     localStorage.clear();
     const user = {
         Id: 1,
@@ -38,5 +38,5 @@ const GetUser = (req, res) => {
 
 form.onsubmit = (event) => {
     event.preventDefault();
-    GetUser();
+    login();
 }

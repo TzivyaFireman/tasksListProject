@@ -4,10 +4,6 @@ let token = localStorage.getItem("token");
 
 
 const tokenExpired = () => {
-    // if (jwtDecode(token).exp < Date.now() / 1000) {
-        // if (token) {
-        //     const tokenData = jwt_decode(token);
-        //     const expirationTime = tokenData.exp * 1000
         alert("פג הסשן של המשתמש");
         window.location.href = '/index.html';
     // }
