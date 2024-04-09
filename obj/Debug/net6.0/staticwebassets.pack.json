@@ -1,31 +1,47 @@
 {
   "Files": [
     {
-      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\index.html",
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "Z:\\B\\פיירמן צביה\\core הפרויקט\\tasksListProject\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.שיעור 2 מחדש.props",
-      "PackagePath": "build\\שיעור 2 מחדש.props"
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\js\\tasks.js",
+      "PackagePath": "staticwebassets\\js\\tasks.js"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.שיעור 2 מחדש.props",
-      "PackagePath": "buildMultiTargeting\\שיעור 2 מחדש.props"
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\js\\users.js",
+      "PackagePath": "staticwebassets\\js\\users.js"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.שיעור 2 מחדש.props",
-      "PackagePath": "buildTransitive\\שיעור 2 מחדש.props"
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\tasks.html",
+      "PackagePath": "staticwebassets\\tasks.html"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.שיעור 2 מחדש.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\wwwroot\\users.html",
+      "PackagePath": "staticwebassets\\users.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.taskListProject.props",
+      "PackagePath": "build\\taskListProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.taskListProject.props",
+      "PackagePath": "buildMultiTargeting\\taskListProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.taskListProject.props",
+      "PackagePath": "buildTransitive\\taskListProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.taskListProject.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     }
   ],

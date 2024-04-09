@@ -192,9 +192,16 @@ C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\System.IdentityMo
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\scopedcss\bundle\שיעור 2 מחדש.styles.css
-C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.csproj.CopyComplete
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.genruntimeconfig.cache
 C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\ref\שיעור 2 מחדש.dll
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\data\tasks.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\package-lock.json
 C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\package.json
+C:\Users\1\Desktop\יד\core\tasksListProject\bin\Debug\net6.0\credentials.json
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 מחדש.sourcelink.json
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.שיעור 2 מחדש.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.build.שיעור 2 מחדש.props
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.שיעור 2 מחדש.props
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.שיעור 2 מחדש.props
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\1\Desktop\יד\core\tasksListProject\obj\Debug\net6.0\שיעור 2 .E21AEC2A.Up2Date

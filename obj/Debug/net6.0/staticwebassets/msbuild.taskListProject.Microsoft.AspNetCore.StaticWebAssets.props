@@ -2,9 +2,9 @@
   <ItemGroup>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>css/site.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -18,9 +18,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\index.html))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>index.html</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -34,9 +34,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\login.js))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>js/login.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -50,9 +50,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\tasks.js))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>js/tasks.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -66,9 +66,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\users.js))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>js/users.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -82,9 +82,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\tasks.html))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>tasks.html</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
@@ -98,9 +98,9 @@
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\users.html))">
       <SourceType>Package</SourceType>
-      <SourceId>שיעור 2 מחדש</SourceId>
+      <SourceId>taskListProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/שיעור 2 מחדש</BasePath>
+      <BasePath>_content/taskListProject</BasePath>
       <RelativePath>users.html</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>

@@ -5,14 +5,12 @@ const userPassword = document.getElementById('userPassword')
 const submitButton = document.getElementById('submitButton');
 const GetUser = (req, res) => {
     localStorage.clear();
-    // const itemId = document.getElementById('edit-id').value;
     const user = {
         Id: 1,
         Name: userName.value.trim(),
         Password: userPassword.value.trim(),
         UserType: 0
     };
-    alert(user.name);
     fetch(uri, {
         method: 'POST',
         headers: {
@@ -42,4 +40,3 @@ form.onsubmit = (event) => {
     event.preventDefault();
     GetUser();
 }
-

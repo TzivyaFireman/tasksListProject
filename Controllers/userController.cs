@@ -77,27 +77,18 @@ public class UserController : ControllerBase
         // return user;
     }
 
-    // [HttpGet("{id}")]
-    // public ActionResult<User> Get(int id)
-    // {
-    //     var User = UserService.GetById(id);
-    //     if (User == null)
-    //         return NotFound();
-    //     return User;
-    // }
 
-
-    // [HttpPut("{id}")]
-    // [Authorize(Policy = "admin")]
-    // public ActionResult Put(int id, User newUser)
-    // {
-    //     var result = UserService.Update(id, newUser);
-    //     if (!result)
-    //     {
-    //         return BadRequest();
-    //     }
-    //     return NoContent();
-    // }
+    [HttpPut("{id}")]
+    [Authorize(Policy = "admin")]
+    public ActionResult Put(int id, User newUser)
+    {
+        var result = UserService.Update(id, newUser);
+        if (!result)
+        {
+            return BadRequest();
+        }
+        return NoContent();
+    }
 
 
     [HttpDelete("{id}")]

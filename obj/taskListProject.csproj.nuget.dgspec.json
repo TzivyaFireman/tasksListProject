@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj": {}
+    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\taskListProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj": {
+    "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\taskListProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj",
-        "projectName": "שיעור 2 מחדש",
-        "projectPath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\taskListProject.csproj",
+        "projectName": "taskListProject",
+        "projectPath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\taskListProject.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\obj\\",
         "projectStyle": "PackageReference",

@@ -16,9 +16,6 @@ const moveToUsersDetails = async () => {
 moveToUsersDetails()
 
 const tokenExpired = () => {
-    // if (token) {
-    // const tokenData = jwt_decode(token);
-    // const expirationTime = tokenData.exp * 1000
     alert("פג הסשן של המשתמש");
     window.location.href = '/index.html';
 }
@@ -84,6 +81,7 @@ function deleteItem(id) {
             tokenExpired();
         });
 }
+
 
 function displayEditForm(id) {
     const item = tasks.find(item => item.id === id);

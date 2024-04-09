@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dEkyoo8GDxWQceuQsxtgSKXLrz12bixT78Z3RAawlGh8q12QstQX+MU/5zj43guobTs+/d24WACWa930GcjzRQ==",
+  "dgSpecHash": "C/7L2CvuZtuhwj4YOIGH8umviP21nmoTb+bJYTnk/Q8ye+kFujhDkoO1Qcfl0Xdp1UHKs5oM7Eu5w0C+gpVj0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\שיעור 2 מחדש.csproj",
+  "projectFilePath": "C:\\Users\\1\\Desktop\\יד\\core\\tasksListProject\\taskListProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -27,5 +27,16 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNetCore.Authentication.JwtBearer' 5.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q7cg-43mg-qp69",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

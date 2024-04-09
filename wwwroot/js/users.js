@@ -18,7 +18,6 @@ myHeaders.append("Content-Type", "application/json");
 
 
 const getItems = (token) => {
-    tokenExpired();
     var requestOptions = {
         method: 'GET',
         headers: myHeaders,
