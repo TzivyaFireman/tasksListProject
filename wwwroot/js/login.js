@@ -28,8 +28,8 @@ const login = (req, res) => {
             }
             else {
                 localStorage.setItem("token", JSON.stringify(token));
-                userName.value = ''; // Clear username field manually
-                userPassword.value = ''; // Clear password field manually          
+                userName.value = ''; 
+                userPassword.value = '';          
                 window.location.href = "../tasks.html";
             }
         })

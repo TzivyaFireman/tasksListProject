@@ -40,8 +40,6 @@ public class UserService : IUserService
 
     public bool Update(int id, User newUser)
     {
-        // if (id != newUser.Id)
-        //     return false;
         var existingUser = GetById(id);
         if (existingUser == null)
             return false;
@@ -72,12 +70,3 @@ public class UserService : IUserService
     public int Count => Users.Count();
 
 }
-
-
-// public static class UserUtils
-// {
-//     public static void AddUser(this IServiceCollection services)
-//     {
-//         services.AddScoped<ILoginService, LoginService>();
-//     }
-// }/////////////////

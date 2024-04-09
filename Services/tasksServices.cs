@@ -78,11 +78,6 @@ public class TaskService : IMyTaskService
 
     public void DeleteByUserID(int id)
     {
-        // foreach (var task in tasks)
-        // {
-        //     if(task.Owner==id)
-        //         tasks.RemoveAt(tasks.IndexOf(task));
-        // }
         tasks = new List<MyTask>(tasks.Where(t => t.Owner != id));
         saveToFile();
     }
@@ -90,11 +85,3 @@ public class TaskService : IMyTaskService
 
 }
 
-
-// public static class MyTaskUtils
-// {
-//     public static void AddMyTask(this IServiceCollection services)
-//     {
-//         services.AddScoped<IMyTaskService, TaskService>();
-//     }
-// }

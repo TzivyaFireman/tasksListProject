@@ -13,5 +13,4 @@ public interface IMyTaskService
 
     bool Delete(int id);
     void DeleteByUserID(int id);
-    //public bool chekAuthorization(int taskId);
 }

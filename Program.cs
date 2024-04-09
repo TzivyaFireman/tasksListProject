@@ -16,14 +16,12 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddMyTask();
 builder.Services.AddUser();
 builder.Services.AddToken();
 
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(options =>
@@ -33,59 +31,50 @@ builder.Services.AddAuthentication(options =>
 .AddJwtBearer(cfg =>
 {
     cfg.RequireHttpsMetadata = false;
-    TokenService tokenService=new TokenService();
+    TokenService tokenService = new TokenService();
 
-    // var tokenService = builder.Services.BuildServiceProvider().GetRequiredService<ITokenService>;
-    cfg.TokenValidationParameters =tokenService.GetTokenValidationParameters();
+    cfg.TokenValidationParameters = tokenService.GetTokenValidationParameters();
 });
-//auth2
 builder.Services.AddAuthorization(cfg =>
             {
                 cfg.AddPolicy("admin", policy => policy.RequireClaim("type", "admin"));
                 cfg.AddPolicy("user", policy => policy.RequireClaim("type", "user"));
-                // cfg.AddPolicy("ClearanceLevel1", policy => policy.RequireClaim("ClearanceLevel", "1", "2"));
-                // cfg.AddPolicy("ClearanceLevel2", policy => policy.RequireClaim("ClearanceLevel", "2"));
             });
 
-            builder.Services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "FBI", Version = "v1" });
-                //auth3
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    In = ParameterLocation.Header,
-                    Description = "Please enter JWT with Bearer into field",
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey
-                });
-                //auth4
-                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "FBI", Version = "v1" });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter JWT with Bearer into field",
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
                 { new OpenApiSecurityScheme
                         {
                          Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer"}
                         },
                     new string[] {}
                 }
-                });
-            });
+    });
+});
 
 
 
 var app = builder.Build();
 
 
-// Configure the HTTP request pipeline.
 
-    //auth1
-   
 
 app.Map("/favicon.ico", (a) =>
     a.Run(async c => await Task.CompletedTask));
 
 app.UseLogMiddleware("file.log");
 
-app.Use(async (context, next) => 
-{   
+app.Use(async (context, next) =>
+{
     await next.Invoke();
 });
 

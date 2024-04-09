@@ -74,11 +74,3 @@ public class LoginService : ILoginService
 
 }
 
-
-// public static class UserUtils
-// {
-//     public static void AddUser(this IServiceCollection services)
-//     {
-//         services.AddScoped<ILoginService, LoginService>();
-//     }
-// }/////////////////

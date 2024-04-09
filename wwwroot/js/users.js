@@ -6,7 +6,6 @@ let token = localStorage.getItem("token");
 const tokenExpired = () => {
         alert("פג הסשן של המשתמש");
         window.location.href = '/index.html';
-    // }
 }
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + JSON.parse(token));
@@ -78,32 +77,6 @@ function displayEditForm(id) {
     document.getElementById('editForm').style.display = 'block';
 }
 
-// function updateItem() {
-//     const itemId = document.getElementById('edit-id').value;
-//     const item = {
-//         id: parseInt(itemId, 10),
-//         name: document.getElementById('edit-name').value.trim(),
-//         password: document.getElementById('edit-password').value.trim(),
-//         isManager: document.getElementById('edit-isManager').checked
-//     };
-//     fetch(`${uri}/${itemId}`, {
-//         method: 'PUT',
-//         headers: myHeaders,
-//         body: JSON.stringify(item)
-//     })
-//         .then(() => getItems(token))
-//         .catch(error => {console.error('Unable to update item.', error);
-//          tokenExpired();
-//      });
-
-//     closeInput();
-
-//     return false;
-// }
-
-// function closeInput() {
-//     document.getElementById('editForm').style.display = 'none';
-// }
 
 function _displayCount(itemCount) {
     const name = (itemCount === 1) ? 'user' : 'user options';

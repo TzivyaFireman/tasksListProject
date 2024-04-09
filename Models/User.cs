@@ -6,10 +6,4 @@ public class User
     public string Password { get; set; }
     public UserType UserType { get; set; }
 
-    // public User(int id,string name, string password)
-    // {
-    //     Id=id;
-    //     Name = name;
-    //     Password = password;
-    // }
 }

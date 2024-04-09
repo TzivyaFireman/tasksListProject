@@ -71,10 +71,6 @@ public class UserController : ControllerBase
         if (user == null)
             return NotFound();
         return user;
-        // if(!(int.Parse(User.FindFirst("id")?.Value!)) && User.FindFirst("type")?.Value!="admin")
-        //     return Unauthorized();
-        // if (user == null)
-        // return user;
     }
 
 
