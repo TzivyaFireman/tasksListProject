@@ -217,3 +217,8 @@
 /index.html.GET took 92ms. User: unknown
 /Login.POST took 389ms. User: unknown
 /task.GET took 201ms. User: unknown
+/index.html.GET took 150ms. User: unknown
+/css/site.css.GET took 15ms. User: unknown
+/js/login.js.GET took 41ms. User: unknown
+/Login.POST took 282ms. User: unknown
+/index.html.GET took 14ms. User: unknown
