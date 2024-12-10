@@ -1,46 +1,163 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>login</title>
     <link rel="stylesheet" href="css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
 
-</head>
+  <body class="body">
+  
 
-<body>
-    <h1>login</h1>
+    <!-- SVG Image Start  -->
+    <div class="container">
+      <div class="ear ear--left"></div>
+      <div class="ear ear--right"></div>
+      <div class="face">
+        <div class="eyes">
+          <div class="eye eye--left">
+            <div class="glow"></div>
+          </div>
+          <div class="eye eye--right">
+            <div class="glow"></div>
+          </div>
+        </div>
+        <div class="nose">
+          <svg width="38.161" height="22.03">
+            <path
+              d="M2.017 10.987Q-.563 7.513.157 4.754C.877 1.994 2.976.135 6.164.093 16.4-.04 22.293-.022 32.048.093c3.501.042 5.48 2.081 6.02 4.661q.54 2.579-2.051 6.233-8.612 10.979-16.664 11.043-8.053.063-17.336-11.043z"
+              fill="#243946"
+            ></path>
+          </svg>
+          <div class="glow"></div>
+        </div>
+        <div class="mouth">
+          <svg class="smile" viewBox="-2 -2 84 23" width="84" height="23">
+            <path
+              d="M0 0c3.76 9.279 9.69 18.98 26.712 19.238 17.022.258 10.72.258 28 0S75.959 9.182 79.987.161"
+              fill="none"
+              stroke-width="3"
+              stroke-linecap="square"
+              stroke-miterlimit="3"
+            ></path>
+          </svg>
+          <div class="mouth-hole"></div>
+          <div class="tongue breath">
+            <div class="tongue-top"></div>
+            <div class="line"></div>
+            <div class="median"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tengah">
+        <div class="hands">
+          <div class="hand hand--left">
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+          </div>
+          <div class="hand hand--right">
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+            <div class="finger">
+              <div class="bone"></div>
+              <div class="nail"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SVG Image End -->
 
-    <br>
-    <form id="formUser" action="tasks.html">
-        <input type="text" id="userName" placeholder="insert name" required>
-        <br>
-        <input type="text" id="userPassword" placeholder="insert password" required>
-        <br>
-        <button type="submit" id="submitButton">login</button>
-    </form>
+      <!-- Form Start -->
+      <form action="tasks.html" class="form">
+        <div class="tengah">
+          <div class="login">
+            <label>
+              <div class="fas fa-user"></div>
+              <input
+                class="username"
+                type="text"
+                autocomplete="on"
+                placeholder="Username"
+              />
+            </label>
+            <label>
+              <div class="fas fa-lock"></div>
+              <input
+                class="password"
+                type="password"
+                autocomplete="off"
+                placeholder="password"
+              />
+            </label>
+            <button class="login-button" type="submit" id="submitButton">Login</button>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <div
+            class="postman-run-button"
+            data-postman-action="collection/fork"
+            data-postman-visibility="public"
+            data-postman-var-1="31260266-785778ac-e7ce-40f5-a828-7587565eb1cc"
+            data-postman-collection-url="entityId=31260266-785778ac-e7ce-40f5-a828-7587565eb1cc&entityType=collection&workspaceId=4e68629c-53c7-49d0-8eb0-6526af6181d4"
+          ></div>
+        </div>
+      </form>
+     
 
+      <!-- Form End -->
 
-    <br><br>
-
-    <div class="postman-run-button" data-postman-action="collection/fork" data-postman-visibility="public"
-        data-postman-var-1="31260266-785778ac-e7ce-40f5-a828-7587565eb1cc"
-        data-postman-collection-url="entityId=31260266-785778ac-e7ce-40f5-a828-7587565eb1cc&entityType=collection&workspaceId=4e68629c-53c7-49d0-8eb0-6526af6181d4">
+      
     </div>
     <script type="text/javascript">
-        (function (p, o, s, t, m, a, n) {
-            !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-            !o.getElementById(s + t) && o.getElementsByTagName("head")[0].appendChild((
-                (n = o.createElement("script")),
-                (n.id = s + t), (n.async = 1), (n.src = m), n
-            ));
-        }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+      (function (p, o, s, t, m, a, n) {
+        !p[s] &&
+          (p[s] = function () {
+            (p[t] || (p[t] = [])).push(arguments);
+          });
+        !o.getElementById(s + t) &&
+          o
+            .getElementsByTagName("head")[0]
+            .appendChild(
+              ((n = o.createElement("script")),
+              (n.id = s + t),
+              (n.async = 1),
+              (n.src = m),
+              n)
+            );
+      })(
+        window,
+        document,
+        "_pm",
+        "PostmanRunObject",
+        "https://run.pstmn.io/button.js"
+      );
     </script>
+  </body>
 
-
-
-</body>
-
-<script src="./js/login.js"></script>
-
+  <script src="./js/login.js"></script>
+  
 </html>
