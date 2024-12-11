@@ -92,7 +92,7 @@
       <!-- SVG Image End -->
 
       <!-- Form Start -->
-      <form action="tasks.html" class="form">
+      <form id="formUser" action="tasks.html" class="form">
         <div class="tengah">
           <div class="login">
             <label>
@@ -102,6 +102,8 @@
                 type="text"
                 autocomplete="on"
                 placeholder="Username"
+                id="userName" 
+                required
               />
             </label>
             <label>
@@ -111,6 +113,8 @@
                 type="password"
                 autocomplete="off"
                 placeholder="password"
+                id="userPassword"
+                required
               />
             </label>
             <button class="login-button" type="submit" id="submitButton">Login</button>
