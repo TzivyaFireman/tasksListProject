@@ -4,38 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/tasks.css">
 </head>
 <body>
-    <h1>Task CRUD</h1>
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New task">
-        <input type="submit" value="Add">
-    </form>
 
-    <div id="editForm" style="display: none;">
-        <h3>Edit</h3>
-        <form action="javascript:void(0);" onsubmit="updateItem()">
-            <input type="hidden" id="edit-id">
-            <input type="checkbox" id="edit-isDone">
-            <input type="text" id="edit-name">
-            <input type="submit" value="Save">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
-        </form>
+    <div class="container" id="pageContainer">
+
+        <div class="sidebarContainer">
+
+            <h2 style="color:  var(--text)">Username</h2>
+
+            <button type="submit" id="linkButtonToUsers">
+                <svg class="userProfileSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                </svg>
+                <a class="textLink" href="./users.html">Profile</a>
+            </button>
+
+            <form id="addTaskForm" action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                
+                <input type="text" id="add-name" placeholder="New task">
+                <button class="svgBtn" type="submit">
+
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="buttonText" onclick="openDialog()">Add Task</span> 
+
+                </button>
+
+            </form>
+
+         </div>
+
+        <div class="mainPageContainer">
+
+            <table id="table">
+
+                 <tr class="title">
+                    <th style= "text-align: center;"  colspan="4">
+                        <h1 id="counter"></h1>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Is done?</th>
+                    <th>Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tbody id="tasks"></tbody>
+            </table>
+        </div>
+
     </div>
 
-    <p id="counter"></p>
+<div id="editForm" style="display: none;">
 
-    <table>
-        <tr>
-            <th>Is done?</th>
-            <th>Name</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tbody id="tasks"></tbody>
-    </table>
-    <button style="display: none;" id="linkButtonToUsers"><a href="./users.html">users details</a></button>
-    <script src="js/tasks.js" asp-append-version="true"></script>
+    <h3 style="text-align: center; color: black">Edit</h3>
+
+       <form action="javascript:void(0);" onsubmit="updateItem()">
+           <input type="hidden" id="edit-id">
+           <div id="editContainer">
+               <p id="textCheckbox">Is done?: </p> <input type="checkbox" id="edit-isDone"> 
+           </div>
+               <input type="text" id="edit-name">
+           <input type="submit" value="Save" id="saveBtn">
+           <a style='cursor: pointer' class="closeBtn" onclick="closeInput()" aria-label="Close">&#10006;</a>
+       </form>   
+
+</div>
+
+<script src="js/tasks.js" asp-append-version="true"></script>
 </body>
 </html>
