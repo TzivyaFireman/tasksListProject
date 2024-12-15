@@ -63,7 +63,7 @@ background-color: var(--secondary);
 }
 
 #addTaskForm{
-margin: 5rem 0px 0px 16px
+margin: 2rem 0px 0px 16px
 }
 
 #editForm {
@@ -259,6 +259,12 @@ color: var(--text)
 
 .colourModeSvg:hover{
   color: var(--higlight)
+}
+
+#linkButtonToUsers{
+  margin-top: 3rem;
+  padding-left: 16px;
+  color: var(--text)
 }
 
 .colourModeSvg{
