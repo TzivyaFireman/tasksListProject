@@ -1,295 +1,309 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  input[type='submit'],
-  button, svg
-  [aria-label] {
-    cursor: pointer;
-  }
-  
-  :root{
-  --primary: #f9db5f;
-  --secondary:  #243946;
-  --higlight: #9f9da9;
-  --text: white;
-  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  body {
-  display: inline-block;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-image: linear-gradient(to top right, #f9a743, #f9db5f);
-  }
-  
-  .container{
-  display: flex;
-  }
-  
-  .mainPageContainer{
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 32px;
-  padding-top: 15vh;
-  }
-  
-  .sidebarContainer{
-  padding-top: 5vh;
-  padding-left: 16px;
-  width: 25vw;
-  height: 100vh;
-  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  background-color: var(--secondary);
-  }
-  
-  #addTaskForm{
-  margin: 5rem 0px 0px 16px
-  }
-  
-  #editForm {
-    text-align: center;
-    width: 30vw;
-    height: 30vh;
-    display: none;
-    position: absolute;
-    top: 15vh;
-    left: 40vw;
-    z-index: 999;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  h3{
-  margin-top: 1rem;
-  }
-  
-  
-  #edit-name{
-  height: 3rem;
-  width: 50%;
-  border-radius: 10px;
-  border:none;
-  box-shadow: var(--shadow)
-  }
-  
-  #edit-isDone{
-  border: solid black 2px;
-  }
-  
-  #edit-isDone::before{
-  background-color: green;
-  height: 1rem;
-  width: 1rem;
-  }
-  
-  #saveBtn{
-  background-color: var(--secondary);
-  height: 3rem;
-  width: 50%;
-  border-radius: 10px;
-  border:none;
-  color: var(--text)
-  }
-  
-  #saveBtn, #edit-name{
-  margin: 8px;
-  box-shadow: var(--shadow)
-  }
-  
-  #saveBtn:hover{
-  background-color: var(--higlight)
-  }
-  
-  #editContainer{
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  }
-  
-  #textCheckbox{
-  color: black;
-  font-weight: bold;
-  margin-right: 2rem;
-  }
-  
-  .closeBtn{
-  color: black;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+
+input[type='submit'],
+button, svg
+[aria-label] {
+  cursor: pointer;
+}
+
+:root{
+--primary: #f9db5f;
+--secondary:  #243946;
+--higlight: #9f9da9;
+--text: white;
+--oppositeText: black;
+--shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+display: inline-block;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background-image: linear-gradient(to top right, #f9a743, #f9db5f);
+}
+
+.container{
+display: flex;
+}
+
+.mainPageContainer{
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 32px;
+padding-top: 15vh;
+}
+
+.sidebarContainer{
+padding-top: 5vh;
+padding-left: 16px;
+width: 25vw;
+height: 100vh;
+box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+background-color: var(--secondary);
+}
+
+#addTaskForm{
+margin: 5rem 0px 0px 16px
+}
+
+#editForm {
+  text-align: center;
+  width: 30vw;
+  height: 30vh;
+  display: none;
   position: absolute;
-  top:1rem;
-  right:1rem;
-  }
-  
-  .closeBtn:hover{
-  color: var(--higlight)
-  }
-  
-  .svgBtn, #add-name{
-    height: 3rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    margin: 5px 0;
-    width: 75%;
-  }
-  
-  .svgBtn{
-  display: flex;
-  align-items: center;
-  border:0;
-  gap:0.5rem;
-  background-color: var(--primary);
-  }
-  
-  .svgBtn:hover{
-  background-color: var(--higlight);
-  }
-  
-  .svg, .editDeleteSvg{ 
-  width: 1.5rem;
-  }
-  
-  .svg, .buttonText{
-  color: black;
-  }
-  
-  #table {
+  top: 15vh;
+  left: 40vw;
+  z-index: 999;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h3{
+margin-top: 1rem;
+}
+
+
+#edit-name{
+height: 3rem;
+width: 50%;
+border-radius: 10px;
+border:none;
+box-shadow: var(--shadow)
+}
+
+#edit-isDone{
+border: solid black 2px;
+}
+
+#edit-isDone::before{
+background-color: green;
+height: 1rem;
+width: 1rem;
+}
+
+#saveBtn{
+background-color: var(--secondary);
+height: 3rem;
+width: 50%;
+border-radius: 10px;
+border:none;
+color: var(--text)
+}
+
+#saveBtn, #edit-name{
+margin: 8px;
+box-shadow: var(--shadow)
+}
+
+#saveBtn:hover{
+background-color: var(--higlight)
+}
+
+#editContainer{
+display: flex;
+justify-content: center;
+margin-top: 32px;
+}
+
+#textCheckbox{
+color: black;
+font-weight: bold;
+margin-right: 2rem;
+}
+
+.closeBtn{
+color: black;
+position: absolute;
+top:1rem;
+right:1rem;
+}
+
+.closeBtn:hover{
+color: var(--higlight)
+}
+
+.svgBtn, #add-name{
+  height: 3rem;
   border: none;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-  width: 50vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  }
-  
-  td {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: black;
-  }
-  
-  td:nth-child(1){
-  padding: 32px;
-  width: 5vw;
-  }
-  
-  td:nth-child(2){
-  padding-left: 32px;
-  width: 40vw;
-  }
-  
-  td:nth-child(3), td:nth-child(4){
-  text-align: center;
-  width: 5vw
-  }
-  
-  th{
-  background-color: var(--secondary);
-  text-align: center;
-  color: var(--text);
-  border-radius: 5px;
-  }
-  
-  .addBtnContainer{
-  border: solid black 2px;
-  }
-  
-  #addTaskDialog{
-  position:absolute;
-  top:25%;
-  margin: auto;
-  width: 50vw;
-  height: 200px;
-  background-color: var(--secondary);
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
-  .editDeleteBtn{
-  background-color: transparent;
-  border:0;
-  }
-  
-  .editDeleteSvg:hover{
-  color: var(--higlight);
-  }
-  
-  .editDeleteSvg{
-  color: var(--secondary);
-  }
-  
-  #linkButtonToUsers{
-  padding-top: 8px;
-  display: flex;
-  gap: 0.5rem;
-  background-color: transparent;
-  border: none;
-  }
-  
-  #linkButtonToUsers:hover,
-  #linkButtonToUsers:hover .userProfileSvg,
-  #linkButtonToUsers:hover .textLink
-  {
-  color: var(--higlight)
-  }
-  
-  .userProfileSvg{
-  width: 1.5rem;
-  color: var(--text)
-  }
-  
-  .textLink{
-  text-decoration: none;
-  color:  var(--text)
-  }
-  
-  h2{
-  font-size: 2rem;
-  overflow-wrap:break-word
-  }
-  
-  input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  border-radius: 10px;
   font-size: 1rem;
-  padding: 2px;
-  cursor: pointer;
-  }
-  
-  
-  input[type="checkbox"]::before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
-  transform: scale(0);
-  background-color: var(--secondary);
-  cursor: pointer;
-  }
-  
-  input[type="checkbox"]:checked::before {
-  transform: scale(1.5);
-  }
-  
-  
+  margin: 5px 0;
+  width: 75%;
+}
+
+.svgBtn{
+display: flex;
+align-items: center;
+border:0;
+gap:0.5rem;
+background-color: var(--primary);
+}
+
+.svgBtn:hover{
+background-color: var(--higlight);
+}
+
+.svg, .editDeleteSvg{ 
+width: 1.5rem;
+}
+
+.svg, .buttonText{
+color: var(--oppositeText);
+}
+
+#table {
+border: none;
+border-radius: 5px;
+font-family: Arial, sans-serif;
+width: 50vw;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+td {
+padding-top: 2rem;
+padding-bottom: 2rem;
+color: black;
+}
+
+td:nth-child(1){
+padding: 32px;
+width: 5vw;
+}
+
+td:nth-child(2){
+padding-left: 32px;
+width: 40vw;
+}
+
+td:nth-child(3), td:nth-child(4){
+text-align: center;
+width: 5vw
+}
+
+th{
+background-color: var(--secondary);
+text-align: center;
+color: var(--text);
+border-radius: 5px;
+}
+
+.addBtnContainer{
+border: solid black 2px;
+}
+
+#addTaskDialog{
+position:absolute;
+top:25%;
+margin: auto;
+width: 50vw;
+height: 200px;
+background-color: var(--secondary);
+border: none;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.editDeleteBtn{
+background-color: transparent;
+border:0;
+}
+
+.editDeleteSvg:hover{
+color: var(--higlight);
+}
+
+.editDeleteSvg{
+color: var(--secondary);
+}
+
+#linkButtonToUsers, #colourMode {
+padding-top: 8px;
+display: flex;
+gap: 0.5rem;
+background-color: transparent;
+border: none;
+}
+
+#linkButtonToUsers:hover,
+#linkButtonToUsers:hover .userProfileSvg,
+#linkButtonToUsers:hover .textLink
+{
+color: var(--higlight)
+}
+
+.userProfileSvg, .colourModeSvg{
+color: var(--text)
+}
+
+.colourModeSvg:hover{
+  color: var(--higlight)
+}
+
+.colourModeSvg{
+  width: 2rem;
+}
+
+#colourMode{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.textLink{
+text-decoration: none;
+color:  var(--text)
+}
+
+h2{
+  padding-left: 2rem;
+font-size: 2rem;
+overflow-wrap:break-word
+}
+
+input[type="checkbox"] {
+appearance: none;
+-webkit-appearance: none;
+display: flex;
+align-content: center;
+justify-content: center;
+font-size: 1rem;
+padding: 2px;
+cursor: pointer;
+}
+
+
+input[type="checkbox"]::before {
+content: "";
+width: 1.5rem;
+height: 1.5rem;
+clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
+transform: scale(0);
+background-color: var(--secondary);
+cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+transform: scale(1.5);
+}
+

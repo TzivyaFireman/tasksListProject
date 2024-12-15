@@ -2,6 +2,35 @@ const uri = '/task';
 let tasks = [];
 let token = localStorage.getItem("token");
 
+const root = document.documentElement
+let isDarkMode = false
+
+function setTheme(mode){
+    if (mode === "light") {
+        root.style.setProperty('--primary', '#f9db5f');
+        root.style.setProperty('--secondary', '#243946');
+        root.style.setProperty('--higlight', '#9f9da9');
+        root.style.setProperty('--text', '#ffffff');
+        root.style.setProperty('--oppositeText', 'black')
+        document.body.style.backgroundImage =  'linear-gradient(to top right, #f9a743, #f9db5f'
+    } else if (mode === "dark") {
+        root.style.setProperty('--primary', '#00203f');
+        root.style.setProperty('--secondary', '#ADEFD1FF');
+        root.style.setProperty('--higlight', '#3a4a66');
+        root.style.setProperty('--text', 'black');
+        root.style.setProperty('--oppositeText', 'white')
+        document.body.style.backgroundImage = 'linear-gradient(to top right, #00203f, #203552'
+    }
+}
+
+document.getElementById("colourMode").addEventListener('click', () =>{
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        setTheme("dark");
+    } else {
+        setTheme("light");
+    }
+})
 
 const moveToUsersDetails = async () => {
 
