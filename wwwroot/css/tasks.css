@@ -253,6 +253,7 @@ color: var(--higlight)
 }
 
 .userProfileSvg, .colourModeSvg{
+width: 1.5rem;
 color: var(--text)
 }
 
@@ -273,12 +274,6 @@ color: var(--text)
 .textLink{
 text-decoration: none;
 color:  var(--text)
-}
-
-h2{
-  padding-left: 2rem;
-font-size: 2rem;
-overflow-wrap:break-word
 }
 
 input[type="checkbox"] {
