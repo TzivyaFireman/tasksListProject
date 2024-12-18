@@ -1,38 +1,60 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="css/user.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>users</title>
-</head>
+  <body>
+    <h1>EMPLOYEE MANAGEMENT</h1>
+    <h3>ADD EMPLOYEE</h3>
+    <div class="container">
+      <form action="javascript:void(0);" method="POST" onsubmit="addItem()" class="form">
+        <label>
+          <div class="fas fa-user"></div>
+          <input
+            type="text"
+            id="add-userName"
+            placeholder="Insert Name"
+            required
+            class="field"
+          />
+        </label>
+        <br />
+        <label>
+          <div class="fas fa-lock"></div>
+          <input
+            type="text"
+            id="userPassword"
+            placeholder="Insert Password"
+            required
+            class="field"
+          />
+        </label>
+        <br />
+        <input type="submit" value="Add" />
+      </form>
+      <img src="userto.webp" class="user-image" alt="User Illustration" />
+    </div>
 
-<body>
-    <h1>User CRUD</h1>
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-userName" placeholder="insert name" required>
-        <br>
-        <input type="text" id="userPassword" placeholder="insert password" required>
-        <br>
-        <input type="submit" value="Add">
-    </form>
-
-    <p id="counter"></p>
+    <p id="counter">Total Employees: 3</p>
 
     <table>
+      <thead>
         <tr>
-            <th>Is manager?</th>
-            <th>Name</th>
-            <th>Password</th>
-            <th></th>
-            <th></th>
+          <th>Is Manager?</th>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
-        <tbody id="users"></tbody>
+      </thead>
+      
     </table>
-
-    <script src="js/users.js" asp-append-version="true"></script>
-
+  <script src="js/users.js" asp-append-version="true"></script> 
 </body>
-
 </html>
+
+    
